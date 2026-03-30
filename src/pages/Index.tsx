@@ -120,7 +120,7 @@ export default function Index() {
               <Icon name="ArrowRight" size={20} />
             </a>
             <a
-              href="tel:+79788888888"
+              href="tel:+79785039041"
               className="inline-flex items-center gap-3 px-8 py-4 font-oswald uppercase tracking-wider text-lg transition-all duration-200 hover:scale-105"
               style={{ border: "2px solid rgba(255,255,255,0.3)", color: "#fff", background: "transparent" }}
             >
@@ -329,7 +329,7 @@ export default function Index() {
                 <Icon name="ExternalLink" size={18} />
               </a>
               <a
-                href="tel:+79788888888"
+                href="tel:+79785039041"
                 className="inline-flex items-center gap-3 px-10 py-4 font-oswald uppercase tracking-wider text-lg transition-all duration-200 hover:scale-105"
                 style={{ border: "2px solid rgba(255,255,255,0.22)", color: "#fff", background: "transparent" }}
               >
