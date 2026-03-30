@@ -357,17 +357,26 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            {/* Карта */}
-            <div style={{ border: "1px solid rgba(255,255,255,0.1)", overflow: "hidden" }}>
-              <iframe
-                src="https://yandex.ru/map-widget/v1/?ll=36.469276%2C45.354425&z=17&pt=36.469276%2C45.354425%2Cpm2rdm&text=%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD+%D0%90%D0%B4%D1%80%D0%B5%D0%BD%D0%B0%D0%BB%D0%B8%D0%BD"
-                width="100%"
-                height="360"
-                frameBorder="0"
-                allowFullScreen
-                title="Адреналин на карте"
-                style={{ display: "block" }}
-              />
+            {/* Карта + фото */}
+            <div className="flex flex-col gap-4">
+              <div style={{ border: "1px solid rgba(255,255,255,0.1)", overflow: "hidden" }}>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=36.469276%2C45.354425&z=17&pt=36.469276%2C45.354425%2Cpm2rdm&text=%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9+%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD+%D0%90%D0%B4%D1%80%D0%B5%D0%BD%D0%B0%D0%BB%D0%B8%D0%BD"
+                  width="100%"
+                  height="300"
+                  frameBorder="0"
+                  allowFullScreen
+                  title="Адреналин на карте"
+                  style={{ display: "block" }}
+                />
+              </div>
+              <div style={{ border: "1px solid rgba(255,255,255,0.1)", overflow: "hidden", height: "300px" }}>
+                <img
+                  src="https://cdn.poehali.dev/projects/ca025900-3513-4875-8473-c89058b35ebd/bucket/cc3388e9-e5c7-4f64-8d5b-244065a606ea.jpg"
+                  alt="Магазин Адреналин снаружи"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+                />
+              </div>
             </div>
 
             {/* Контактный блок */}
