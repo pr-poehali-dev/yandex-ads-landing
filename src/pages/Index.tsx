@@ -115,37 +115,14 @@ export default function Index() {
             Более 15 000 товаров. Доставка по Керчи и всему Крыму.
           </p>
 
-          <div
-            className="flex flex-wrap gap-4 animate-fade-up"
-            style={{ animationDelay: "0.3s", opacity: 0 }}
-          >
-            <a
-              href="https://adrenalin-kerch.ru"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 font-oswald uppercase tracking-wider text-lg font-semibold transition-all duration-200 hover:scale-105 active:scale-95"
-              style={{ background: "#ff5000", color: "#fff" }}
-            >
-              Перейти в магазин
-              <Icon name="ArrowRight" size={20} />
-            </a>
-            <a
-              href="tel:+79785039041"
-              className="inline-flex items-center gap-3 px-8 py-4 font-oswald uppercase tracking-wider text-lg transition-all duration-200 hover:scale-105"
-              style={{ border: "2px solid rgba(255,255,255,0.3)", color: "#fff", background: "transparent" }}
-            >
-              <Icon name="Phone" size={18} />
-              Позвонить
-            </a>
-          </div>
         </div>
 
         <div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in"
-          style={{ color: "rgba(255,255,255,0.35)", animationDelay: "1s", opacity: 0 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-fade-in"
+          style={{ color: "rgba(255,255,255,0.5)", animationDelay: "1s", opacity: 0 }}
         >
-          <span className="text-xs font-oswald uppercase tracking-widest">Листай вниз</span>
-          <Icon name="ChevronDown" size={20} />
+          <span className="font-oswald uppercase tracking-widest" style={{ fontSize: "1.5rem" }}>Листай вниз</span>
+          <Icon name="ChevronDown" size={56} />
         </div>
       </section>
 
