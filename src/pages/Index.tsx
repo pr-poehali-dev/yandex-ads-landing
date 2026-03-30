@@ -428,8 +428,7 @@ export default function Index() {
                 <div className="flex gap-3">
                   {[
                     { label: "ВКонтакте", icon: "Users", href: "https://vk.com/adrenalin_kerch" },
-                    { label: "Instagram", icon: "Camera", href: "https://instagram.com/adrenalin_kerch" },
-                    { label: "Telegram", icon: "Send", href: "https://t.me/adrenalin_kerch" },
+                    { label: "Telegram", icon: "Send", href: "https://t.me/+SiNbe2PSsQ5iZWYy" },
                   ].map((soc) => (
                     <a
                       key={soc.label}
