@@ -315,7 +315,7 @@ export default function Index() {
               ГОТОВ СДЕЛАТЬ ЗАКАЗ?
             </h3>
             <p className="mb-8 text-lg" style={{ color: "rgba(255,255,255,0.55)" }}>
-              Заходи на сайт и выбирай из более 3 000 товаров
+              Заходи на сайт и выбирай из более 15 000 товаров
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
