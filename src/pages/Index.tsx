@@ -1,7 +1,7 @@
 import Icon from "@/components/ui/icon";
 
 const HERO_IMAGE =
-  "https://cdn.poehali.dev/projects/ca025900-3513-4875-8473-c89058b35ebd/files/85d2b4d1-a3f0-46c1-b772-5556cd3e4ac1.jpg";
+  "https://cdn.poehali.dev/projects/ca025900-3513-4875-8473-c89058b35ebd/bucket/1222a234-8c18-41e6-b527-424ecc9366eb.jpg";
 
 const advantages = [
   {
