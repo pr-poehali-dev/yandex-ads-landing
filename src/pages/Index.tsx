@@ -111,7 +111,7 @@ export default function Index() {
             className="text-xl mb-10 max-w-xl leading-relaxed animate-fade-up"
             style={{ color: "rgba(255,255,255,0.72)", animationDelay: "0.15s", opacity: 0 }}
           >
-            Снаряжение, одежда и велосипеды для настоящих спортсменов.
+            Спортивные товары, туристическое снаряжение, велосипеды, товары для дайвинга и отдыха на море.
             Более 15 000 товаров. Доставка по Керчи и всему Крыму.
           </p>
 
