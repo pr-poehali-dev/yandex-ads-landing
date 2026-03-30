@@ -287,44 +287,6 @@ export default function Index() {
             ))}
           </div>
 
-          {/* ─── ФИНАЛЬНЫЙ CTA ─── */}
-          <div
-            className="text-center py-14 px-8"
-            style={{
-              background: "linear-gradient(135deg, rgba(255,80,0,0.12), rgba(255,80,0,0.04))",
-              border: "1px solid rgba(255,80,0,0.25)",
-            }}
-          >
-            <h3
-              className="font-oswald uppercase mb-4"
-              style={{ fontSize: "clamp(1.5rem, 3vw, 2.2rem)", color: "#fff" }}
-            >
-              ГОТОВ СДЕЛАТЬ ЗАКАЗ?
-            </h3>
-            <p className="mb-8 text-lg" style={{ color: "rgba(255,255,255,0.55)" }}>
-              Заходи на сайт и выбирай из более 15 000 товаров
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="https://adrenalin-kerch.ru"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-10 py-4 font-oswald uppercase tracking-wider text-lg font-semibold transition-all duration-200 hover:scale-105 active:scale-95"
-                style={{ background: "#ff5000", color: "#fff" }}
-              >
-                Открыть магазин
-                <Icon name="ExternalLink" size={18} />
-              </a>
-              <a
-                href="tel:+79785039041"
-                className="inline-flex items-center gap-3 px-10 py-4 font-oswald uppercase tracking-wider text-lg transition-all duration-200 hover:scale-105"
-                style={{ border: "2px solid rgba(255,255,255,0.22)", color: "#fff", background: "transparent" }}
-              >
-                <Icon name="Phone" size={18} />
-                Позвонить
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -444,6 +406,49 @@ export default function Index() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── ФИНАЛЬНЫЙ CTA ─── */}
+      <section className="py-20 px-6" style={{ background: "#151515" }}>
+        <div className="max-w-5xl mx-auto">
+          <div
+            className="text-center py-14 px-8"
+            style={{
+              background: "linear-gradient(135deg, rgba(255,80,0,0.12), rgba(255,80,0,0.04))",
+              border: "1px solid rgba(255,80,0,0.25)",
+            }}
+          >
+            <h3
+              className="font-oswald uppercase mb-4"
+              style={{ fontSize: "clamp(1.5rem, 3vw, 2.2rem)", color: "#fff" }}
+            >
+              ГОТОВ СДЕЛАТЬ ЗАКАЗ?
+            </h3>
+            <p className="mb-8 text-lg" style={{ color: "rgba(255,255,255,0.55)" }}>
+              Заходи на сайт и выбирай из более 15 000 товаров
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://adrenalin-kerch.ru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-10 py-4 font-oswald uppercase tracking-wider text-lg font-semibold transition-all duration-200 hover:scale-105 active:scale-95"
+                style={{ background: "#ff5000", color: "#fff" }}
+              >
+                Открыть магазин
+                <Icon name="ExternalLink" size={18} />
+              </a>
+              <a
+                href="tel:+79785039041"
+                className="inline-flex items-center gap-3 px-10 py-4 font-oswald uppercase tracking-wider text-lg transition-all duration-200 hover:scale-105"
+                style={{ border: "2px solid rgba(255,255,255,0.22)", color: "#fff", background: "transparent" }}
+              >
+                <Icon name="Phone" size={18} />
+                Позвонить
+              </a>
             </div>
           </div>
         </div>
