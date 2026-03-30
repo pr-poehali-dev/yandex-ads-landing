@@ -341,6 +341,119 @@ export default function Index() {
         </div>
       </section>
 
+      {/* ─── КОНТАКТЫ ─── */}
+      <section className="py-20 px-6" style={{ background: "#0e0e0e" }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <div className="text-sm font-oswald uppercase tracking-widest mb-3" style={{ color: "#ff5000" }}>
+              Где нас найти
+            </div>
+            <h2
+              className="font-oswald uppercase"
+              style={{ fontSize: "clamp(1.8rem, 3.5vw, 3rem)", color: "#fff", letterSpacing: "-0.01em" }}
+            >
+              КОНТАКТЫ
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            {/* Карта */}
+            <div style={{ border: "1px solid rgba(255,255,255,0.1)", overflow: "hidden" }}>
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=36.474&spn=0.02,0.02&z=16&pt=36.474,45.358,pm2rdm&text=%D0%9A%D0%B5%D1%80%D1%87%D1%8C%2C+%D1%83%D0%BB.+%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C+36"
+                width="100%"
+                height="360"
+                frameBorder="0"
+                allowFullScreen
+                title="Адреналин на карте"
+                style={{ display: "block" }}
+              />
+            </div>
+
+            {/* Контактный блок */}
+            <div className="flex flex-col gap-5">
+              {/* Адрес */}
+              <div
+                className="flex items-start gap-4 p-5"
+                style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
+              >
+                <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ background: "rgba(255,80,0,0.15)" }}>
+                  <Icon name="MapPin" size={20} style={{ color: "#ff5000" }} />
+                </div>
+                <div>
+                  <div className="font-oswald uppercase text-sm mb-1" style={{ color: "rgba(255,255,255,0.45)", letterSpacing: "0.06em" }}>Адрес</div>
+                  <div className="font-golos text-base font-medium" style={{ color: "#fff" }}>г. Керчь, ул. Ленина, 36</div>
+                  <div className="text-sm mt-1" style={{ color: "rgba(255,255,255,0.5)" }}>пн–сб: 9:00–19:00 · вс: 10:00–17:00</div>
+                </div>
+              </div>
+
+              {/* Телефон */}
+              <a
+                href="tel:+79785039041"
+                className="flex items-start gap-4 p-5 transition-all duration-200 hover:-translate-y-0.5"
+                style={{ background: "rgba(255,80,0,0.12)", border: "1px solid rgba(255,80,0,0.35)" }}
+              >
+                <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ background: "rgba(255,80,0,0.2)" }}>
+                  <Icon name="Phone" size={20} style={{ color: "#ff5000" }} />
+                </div>
+                <div>
+                  <div className="font-oswald uppercase text-sm mb-1" style={{ color: "rgba(255,255,255,0.45)", letterSpacing: "0.06em" }}>Телефон</div>
+                  <div className="font-oswald text-xl font-semibold" style={{ color: "#fff" }}>+7-978-503-90-41</div>
+                </div>
+              </a>
+
+              {/* Сайт */}
+              <a
+                href="https://adrenalin-kerch.ru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-4 p-5 transition-all duration-200 hover:-translate-y-0.5"
+                style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
+              >
+                <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ background: "rgba(255,255,255,0.07)" }}>
+                  <Icon name="Globe" size={20} style={{ color: "rgba(255,255,255,0.7)" }} />
+                </div>
+                <div>
+                  <div className="font-oswald uppercase text-sm mb-1" style={{ color: "rgba(255,255,255,0.45)", letterSpacing: "0.06em" }}>Сайт</div>
+                  <div className="font-golos text-base" style={{ color: "#ff5000" }}>adrenalin-kerch.ru</div>
+                </div>
+              </a>
+
+              {/* Соцсети */}
+              <div
+                className="p-5"
+                style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
+              >
+                <div className="font-oswald uppercase text-sm mb-4" style={{ color: "rgba(255,255,255,0.45)", letterSpacing: "0.06em" }}>Мы в соцсетях</div>
+                <div className="flex gap-3">
+                  {[
+                    { label: "ВКонтакте", icon: "Users", href: "https://vk.com/adrenalin_kerch" },
+                    { label: "Instagram", icon: "Camera", href: "https://instagram.com/adrenalin_kerch" },
+                    { label: "Telegram", icon: "Send", href: "https://t.me/adrenalin_kerch" },
+                  ].map((soc) => (
+                    <a
+                      key={soc.label}
+                      href={soc.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 text-sm transition-all duration-200 hover:scale-105"
+                      style={{
+                        background: "rgba(255,255,255,0.07)",
+                        border: "1px solid rgba(255,255,255,0.12)",
+                        color: "rgba(255,255,255,0.75)",
+                      }}
+                    >
+                      <Icon name={soc.icon as "Users"} size={15} />
+                      {soc.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ─── FOOTER ─── */}
       <footer
         className="py-8 px-6 border-t"
